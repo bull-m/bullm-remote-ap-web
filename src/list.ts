@@ -34,7 +34,7 @@ export async function initWifiList() {
     DomAddToApp(`
     <div class="header">
       <h1>WiFi列表</h1>
-      <p>将按顺序进行连接，拖动可排序</p>
+      <p>${data.list.length ? '将按顺序进行连接，拖动可排序' : 'wifi列表为空'}</p>
     </div>
     <div class="list" id="wifi-list">
         ${data.list.map((item, index) => `
