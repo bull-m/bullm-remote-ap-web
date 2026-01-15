@@ -18,7 +18,7 @@ export default defineConfig({
     server:{
         proxy:{
             '/api':{
-                target:'http://10.0.0.66', // 开发时指向小车ip
+                target:'http://1.2.1.1', // 开发时指向小车ip
                 changeOrigin:true,
             }
         }
